@@ -76,6 +76,11 @@ function setup() {
   polygon_1 = new poly(110, 100, 20, 20);
 
   sling = new SlingShot(polygon_1.body, { x: 70, y: 90 });
+  
+  if keydown("space"){
+  polygon_1.x = 110;
+    polygon_1.y = 100;
+  }
 
   Engine.run(engine);
 
